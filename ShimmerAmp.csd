@@ -1,6 +1,6 @@
 <Cabbage> bounds(0, 0, 0, 0)
 form caption("Untitled") size(400, 300), colour(58, 110, 182), pluginid("def1")
-rslider bounds(290, 32, 100, 100), channel("brainGain"), range(-6, 10, 1, 1, 0.01), text("Brain"), trackercolour(0, 255, 0, 255), outlinecolour(0, 0, 0, 50), textcolour(0, 0, 0, 255)
+rslider bounds(290, 32, 100, 100), channel("brainGain"), range(-6, 6, 1, 1, 0.01), text("Brain"), trackercolour(0, 255, 0, 255), outlinecolour(0, 0, 0, 50), textcolour(0, 0, 0, 255)
 rslider bounds(152, 32, 100, 100), channel("brassGain"), range(-6, 6, 1, 1, 0.01), text("Brass"), trackercolour(0, 255, 0, 255), outlinecolour(0, 0, 0, 50), textcolour(0, 0, 0, 255)
 rslider bounds(10, 32, 100, 100), channel("boomGain"), range(-6, 6, 1, 1, 0.01), text("Boom"), trackercolour(0, 255, 0, 255), outlinecolour(0, 0, 0, 50), textcolour(0, 0, 0, 255)
 rslider bounds(274, 186, 100, 100), channel("outGain"), range(0, 1, 0, 1, 0.01), text("Output"), trackercolour(0, 255, 0, 255), outlinecolour(0, 0, 0, 50), textcolour(0, 0, 0, 255)
@@ -38,8 +38,8 @@ ares3 pareq a1, 1230.05, kBrain, 0.15,0
 
 aSum = a1+a2
 
-aBright exciter a1, 3000, 15000.07, 10, 10
-aBright2 exciter a2, 3000, 15000.07, 10, 10
+aBright exciter a1, 3000, 15000.07, 10, 6
+aBright2 exciter a2, 3000, 15000.07, 10, 6
 
 ;aBright pareq aSum, 12000.07, 3, 0.25, 0
 
